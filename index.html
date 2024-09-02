@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi primer Sitio Web en JAP</title>
     <link
-      rel="icon"
-      type="image/png"
-      href="https://jovenesaprogramar.edu.uy/themes/theme-ceibal//assets/img/Favicon-Ceibal.png"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUa0AqW1lpe3hx8O99a4bX1RSK4EofRQcoZreA78A2O9l+5e87hZjOpJKn2"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap"
       rel="stylesheet"
@@ -22,39 +20,40 @@
       href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+AU+TAS:wght@100..400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
-    <header>
-      <img
-        class="logo"
-        src="assets/logo-jap-2022.svg"
-        height="50"
-        alt="Logo Jovenes a Programar"
-      />
-    </header>
+    <div class="container">
+      <div class="row justify-content-center align-items-center min-vh-100">
+        <section
+          id="firstSection"
+          class="col-12 d-flex justify-content-center align-items-center text-center"
+        >
+          <video autoplay muted loop id="bg-video">
+            <source src="assets/videoPortada.mp4" type="video/mp4" />
+          </video>
 
-    <section id="firstSection">
-      <video autoplay muted loop id="bg-video">
-        <source src="assets/videoPortada.mp4" type="video/mp4" />
-      </video>
-      <div class="overlay">
-        <div class="left-content">
-          <h1 class="principalTitle">Suleidis Leyva</h1>
-          <h2 class="secundaryTitle">Software Tester</h2>
-        </div>
-        <div class="right-content">
-          <p>
-            I work to ensure the quality assurance and control of the software
-            developed by my team, collaborating closely with them to work more
-            precisely from the beginning to the end of the project, thus
-            achieving a better and clearer understanding of our team's objective
-            to reach, in less time and with the highest quality, to meet the
-            needs and requirements of the client.
-          </p>
-        </div>
+          <div
+            class="overlay d-flex flex-column justify-content-center align-items-center"
+          >
+            <h1 class="principalTitle">Suleidis Leyva</h1>
+            <h2 class="secundaryTitle">Functional Tester</h2>
+
+            <p>
+              I work to ensure the quality assurance and control of the software
+              developed by my team, collaborating closely with them to work more
+              precisely from the beginning to the end of the project, thus
+              achieving a better and clearer understanding of our team's
+              objective to reach, in less time and with the highest quality, to
+              meet the needs and requirements of the client.
+            </p>
+          </div>
+        </section>
       </div>
-    </section>
-    <section id="secondSection">
+    </div>
+    <section id="secondSection" class="col-12">
       <details>
         <summary>
           <img src="assets/icons8-ojos-emoji-48.png" alt="iconVerS" />
@@ -113,6 +112,7 @@
         </ul>
       </details>
     </section>
+
     <footer class="piePagina">
       <div>
         <h3>Education and Courses:</h3>
